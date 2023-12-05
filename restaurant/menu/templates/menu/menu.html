@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+    <style>
+        .menu-item {
+            cursor: pointer;
+        }
+        .menu-description {
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu-item').click(function(){
+                $(this).next('.menu-description').slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+    <div class="menu-item">Spaghetti Bolognese</div>
+    <div class="menu-description">
+        <p>A classic Italian dish made with minced beef, tomatoes, onions, and herbs.</p>
+    </div>
+    <div class="menu-item">Grilled Salmon</div>
+    <div class="menu-description">
+        <p>Fresh salmon fillet, seasoned with lemon and herbs, then grilled to perfection.</p>
+    </div>
+    <div class="menu-item">Chicken Parmesan</div>
+    <div class="menu-description">
+        <p>Breaded chicken breast topped with tomato sauce and melted mozzarella cheese.</p>
+    </div>
+</body>
+</html>
