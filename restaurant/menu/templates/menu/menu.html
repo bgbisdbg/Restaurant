@@ -20,18 +20,12 @@
     </script>
 </head>
 <body>
-    <h1>Restaurant Menu</h1>
-    <div class="menu-item">Spaghetti Bolognese</div>
+    <a href="/admin/"><h1>Restaurant Menu</h1></a>
+{% for dishs in object_list %}
+    <div class="menu-item"><h2>{{ dishs.dish }}</h2></div>
     <div class="menu-description">
-        <p>A classic Italian dish made with minced beef, tomatoes, onions, and herbs.</p>
+        <p>{{ dishs.description }}</p><a href="{{ dishs.link }}">Подробнее тут!</a>
     </div>
-    <div class="menu-item">Grilled Salmon</div>
-    <div class="menu-description">
-        <p>Fresh salmon fillet, seasoned with lemon and herbs, then grilled to perfection.</p>
-    </div>
-    <div class="menu-item">Chicken Parmesan</div>
-    <div class="menu-description">
-        <p>Breaded chicken breast topped with tomato sauce and melted mozzarella cheese.</p>
-    </div>
+{% endfor %}
 </body>
 </html>

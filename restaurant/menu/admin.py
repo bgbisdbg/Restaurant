@@ -1,8 +1,6 @@
 from django.contrib import admin
-from models import DishModel, DescriptionModel
+from menu.models import DishModel, DescriptionModel
 
-
-# Register your models here.
 
 @admin.register(DishModel)
 class DishAdmin(admin.ModelAdmin):

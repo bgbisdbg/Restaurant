@@ -1,8 +1,10 @@
+# menu/urls.py
 from django.urls import path
+from . import views
 from menu.views import DescriptionListView
 
 app_name = 'menu'
 
 urlpatterns = [
-    path('menu/', DescriptionListView.as_view(), name='search')
+    path('', DescriptionListView.as_view(), name='menu')
 ]
