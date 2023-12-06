@@ -42,11 +42,20 @@
 
 
 <h2>4) Редактируется в стандартной админке Django</h2>
-В вход в django admin был реалезован через главную кнопу ``` <ul>
+В вход в django admin был реалезован через главную кнопу
+
+``` 
+
+<ul>
                 <li><a href="admin/">Ресторан</a></li>
-                <li>```
-После создание и миграции моделей они были зарегистрированны в приложение admin для взаимодействия с ними в панели admin
+                <li>
+
 ```
+
+После создание и миграции моделей они были зарегистрированны в приложение admin для взаимодействия с ними в панели admin
+
+```
+
 from django.contrib import admin
 from menu.models import DishModel, DescriptionModel
 
@@ -61,6 +70,7 @@ class DishAdmin(admin.ModelAdmin):
 class DescriptionAdmin(admin.ModelAdmin):
     list_display = ('id', 'dish')
     fields = ('dish', 'description', 'link')
+
 ```
 
                 
@@ -81,6 +91,7 @@ class DescriptionAdmin(admin.ModelAdmin):
 
 <h2>7) При клике на меню происходит переход по заданному в нем URL. URL может быть задан как явным образом, так и через named url.</h2>
 Переходы по ссылками реалезованы в urls.py
+
 ```
 from django.urls import path
 from menu.views import DescriptionListView, IndexView
@@ -91,8 +102,11 @@ urlpatterns = [
     path('', IndexView.as_view(), name='index'),
     path('menu/', DescriptionListView.as_view(), name='menu')
 ]
+
 ```
+
 Так же и в шаблонах 
+
 
 ![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/641e6d22-cdac-409c-b99d-13c15d954738)
 
