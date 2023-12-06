@@ -48,7 +48,7 @@
 
 <ul>
                 <li><a href="admin/">Ресторан</a></li>
-                <li>
+<li>
 
 ```
 
