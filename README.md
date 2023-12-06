@@ -72,6 +72,10 @@ class DescriptionAdmin(admin.ModelAdmin):
 
 ```
 
+
+![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/cd14e28c-e848-424a-81bc-f4addb73253f)
+
+
                 
 <h2>5) Активный пункт меню определяется исходя из URL текущей страницы</h2>
  Были выполнены исходя из URL текущей страницы
