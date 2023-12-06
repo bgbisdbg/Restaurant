@@ -32,14 +32,13 @@
 
 <h2>2) Все, что над выделенным пунктом - развернуто. Первый уровень вложенности под выделенным пунктом тоже развернут.</h2>
 
-![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/20b52b78-62f6-490d-a876-872c24282be5)
+![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/0f907e02-7acf-4de7-b4b2-f6b562f7540a)
 
 
 <h2>3) Хранится в БД.</h2>
 Во время создания проекта были созданы модели а так же были выполнены миграции 
 
-![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/0f907e02-7acf-4de7-b4b2-f6b562f7540a)
-
+![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/20b52b78-62f6-490d-a876-872c24282be5)
 
 <h2>4) Редактируется в стандартной админке Django</h2>
 В вход в django admin был реалезован через главную кнопу
