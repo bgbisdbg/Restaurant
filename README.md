@@ -129,6 +129,7 @@ urlpatterns = [
 
 
 8)На отрисовку каждого меню требуется ровно 1 запрос к БД
+
 Страница "О ресторане"
 
 ![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/641e6d22-cdac-409c-b99d-13c15d954738)
