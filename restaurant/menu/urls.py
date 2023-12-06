@@ -1,10 +1,9 @@
-# menu/urls.py
 from django.urls import path
-from . import views
-from menu.views import DescriptionListView
+from menu.views import DescriptionListView, IndexView
 
 app_name = 'menu'
 
 urlpatterns = [
-    path('', DescriptionListView.as_view(), name='menu')
+    path('', IndexView.as_view(), name='index'),
+    path('menu/', DescriptionListView.as_view(), name='menu')
 ]

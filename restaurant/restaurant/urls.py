@@ -16,10 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
-
+from menu.views import IndexView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('menu.urls', namespace='menu'))
+    path('', IndexView.as_view(), name='index'),
+    path('menu/', include('menu.urls', namespace='menu'))
 ]
