@@ -119,11 +119,20 @@ urlpatterns = [
 
 Так же и в шаблонах 
 
+```
+<li><a href="admin/">Ресторан</a></li>
+                <li>
+                    <ul>
+                        <li><a href="{% url 'index' %}">Ресторане</a></li>
+                        <li><a href="{% url 'menu:menu' %}">Меню</a></li>
+```
 
-![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/641e6d22-cdac-409c-b99d-13c15d954738)
 
 8)На отрисовку каждого меню требуется ровно 1 запрос к БД
 Страница "О ресторане"
+
+![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/641e6d22-cdac-409c-b99d-13c15d954738)
+
 
 ![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/4cca7b00-427d-42ba-9954-84966f9af023)
 
