@@ -138,11 +138,13 @@ urlpatterns = [
 ![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/4cca7b00-427d-42ba-9954-84966f9af023)
 
 Формирует 2 запроса SQL косаемые пользователей
+А страница меню формирует 6 запросов 2 запроса к пользователю и 3 к элеменат выводящим объекты БД 
+
 
 ![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/c7dec8d1-36c6-4d68-a652-9193b46e9019)
 
 
-А страница меню формирует 6 запросов 2 запроса к пользователю и 3 к элеменат выводящим объекты БД 
+ 
 
 ![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/132d840b-25e7-431a-adc6-9f37c85984da)
 
