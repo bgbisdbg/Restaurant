@@ -89,8 +89,17 @@ class DescriptionAdmin(admin.ModelAdmin):
 <h2>6 )Меню на одной странице может быть несколько. Они определяются по названию.</h2>
 На странице меню есть блюда с раскрывающимся кратким описанием и ссылкой на него
 
-![image](https://github.com/bgbisdbg/Restaurant/assets/136889642/9d265927-9f03-4234-9ae3-4c83db8dbf82)
-
+```
+<body>
+    <a href="/admin/"><h1>Restaurant Menu</h1></a>
+{% for dishs in object_list %}
+    <div class="menu-item"><h2>{{ dishs.dish }}</h2></div>
+    <div class="menu-description">
+        <p>{{ dishs.description }}</p><a href="{{ dishs.link }}">Подробнее тут!</a>
+    </div>
+{% endfor %}
+</body>
+```
 
 <h2>7) При клике на меню происходит переход по заданному в нем URL. URL может быть задан как явным образом, так и через named url.</h2>
 Переходы по ссылками реалезованы в urls.py
